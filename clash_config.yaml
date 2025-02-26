@@ -70,14 +70,6 @@ proxies:
   udp: true
   sni: jp.mjt000.com
   skip-cert-verify: true
-- name: 新加坡SG-T-jC0K
-  type: trojan
-  server: sg.mjt000.com
-  port: 443
-  password: d384ad6d-d259-45eb-ba2e-1799fa426ed4
-  udp: true
-  sni: sg.mjt000.com
-  skip-cert-verify: true
 - name: 香港wap-T-R2sl
   type: trojan
   server: waphk.mjt000.com
@@ -181,24 +173,23 @@ proxy-groups:
   type: url-test
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies:
-  - 日本JP-T-SiE6
-  - 日本JP-T-oUJn
   - 日本JP-T-gEwa
-  - 日本JP-T-KwGS
-  - 日本JP-T-ZtHY
-  - 日本JP-T-pR3s
   - 日本JP-T-CjtL
+  - 日本JP-T-pR3s
+  - 日本JP-T-ZtHY
+  - 日本JP-T-KwGS
   - 日本JP-T-TzPC
+  - 日本JP-T-SiE6
   - 日本JP-T-Rvm8
-  - 新加坡SG-T-jC0K
+  - 日本JP-T-oUJn
   - 日本JP-T-7fs6
   - 香港wap-T-R2sl
-  - 香港wap-T-5tTm
-  - 香港wap-T-PSM1
-  - 香港wap-T-FGi6
-  - 香港wap-T-LPYd
-  - 香港wap-T-Lwj9
   - 香港wap-T-r5jt
+  - 香港wap-T-5tTm
+  - 香港wap-T-Lwj9
+  - 香港wap-T-LPYd
+  - 香港wap-T-FGi6
+  - 香港wap-T-PSM1
   url: http://www.pinterest.com
   interval: 300
   tolerance: 50
@@ -206,47 +197,45 @@ proxy-groups:
   type: fallback
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies:
-  - 日本JP-T-SiE6
-  - 日本JP-T-oUJn
   - 日本JP-T-gEwa
-  - 日本JP-T-KwGS
-  - 日本JP-T-ZtHY
-  - 日本JP-T-pR3s
   - 日本JP-T-CjtL
+  - 日本JP-T-pR3s
+  - 日本JP-T-ZtHY
+  - 日本JP-T-KwGS
   - 日本JP-T-TzPC
+  - 日本JP-T-SiE6
   - 日本JP-T-Rvm8
-  - 新加坡SG-T-jC0K
+  - 日本JP-T-oUJn
   - 日本JP-T-7fs6
   - 香港wap-T-R2sl
-  - 香港wap-T-5tTm
-  - 香港wap-T-PSM1
-  - 香港wap-T-FGi6
-  - 香港wap-T-LPYd
-  - 香港wap-T-Lwj9
   - 香港wap-T-r5jt
+  - 香港wap-T-5tTm
+  - 香港wap-T-Lwj9
+  - 香港wap-T-LPYd
+  - 香港wap-T-FGi6
+  - 香港wap-T-PSM1
   url: http://www.pinterest.com
   interval: 300
 - name: 手动选择
   type: select
   proxies:
-  - 日本JP-T-SiE6
-  - 日本JP-T-oUJn
   - 日本JP-T-gEwa
-  - 日本JP-T-KwGS
-  - 日本JP-T-ZtHY
-  - 日本JP-T-pR3s
   - 日本JP-T-CjtL
+  - 日本JP-T-pR3s
+  - 日本JP-T-ZtHY
+  - 日本JP-T-KwGS
   - 日本JP-T-TzPC
+  - 日本JP-T-SiE6
   - 日本JP-T-Rvm8
-  - 新加坡SG-T-jC0K
+  - 日本JP-T-oUJn
   - 日本JP-T-7fs6
   - 香港wap-T-R2sl
-  - 香港wap-T-5tTm
-  - 香港wap-T-PSM1
-  - 香港wap-T-FGi6
-  - 香港wap-T-LPYd
-  - 香港wap-T-Lwj9
   - 香港wap-T-r5jt
+  - 香港wap-T-5tTm
+  - 香港wap-T-Lwj9
+  - 香港wap-T-LPYd
+  - 香港wap-T-FGi6
+  - 香港wap-T-PSM1
 rules:
 - DOMAIN,app.adjust.com,DIRECT
 - DOMAIN,bdtj.tagtic.cn,DIRECT
