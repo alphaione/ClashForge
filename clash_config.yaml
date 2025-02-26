@@ -40,13 +40,6 @@ proxies:
   udp: true
   sni: jp.mjt000.com
   skip-cert-verify: true
-- name: 香港wap-T-FGi6
-  type: trojan
-  server: waphk.mjt000.com
-  port: 443
-  password: 79b25abf-8730-426a-ab47-7e92c6a68007
-  udp: true
-  sni: waphk.mjt000.com
 - name: 日本JP-T-ZtHY
   type: trojan
   server: jp.mjt000.com
@@ -55,13 +48,6 @@ proxies:
   udp: true
   sni: jp.mjt000.com
   skip-cert-verify: true
-- name: 香港wap-T-r5jt
-  type: trojan
-  server: waphk.mjt000.com
-  port: 443
-  password: 796c46f8-82a3-44e4-9937-0e5da73895dc
-  udp: true
-  sni: waphk.mjt000.com
 - name: 日本JP-T-CjtL
   type: trojan
   server: jp.mjt000.com
@@ -70,13 +56,6 @@ proxies:
   udp: true
   sni: jp.mjt000.com
   skip-cert-verify: true
-- name: 香港wap-T-R2sl
-  type: trojan
-  server: waphk.mjt000.com
-  port: 443
-  password: d384ad6d-d259-45eb-ba2e-1799fa426ed4
-  udp: true
-  sni: waphk.mjt000.com
 - name: 日本JP-T-oUJn
   type: trojan
   server: jp.mjt000.com
@@ -85,13 +64,6 @@ proxies:
   udp: true
   sni: jp.mjt000.com
   skip-cert-verify: true
-- name: 香港wap-T-PSM1
-  type: trojan
-  server: waphk.mjt000.com
-  port: 443
-  password: a6f0acd5-0852-432a-b191-854658db6a92
-  udp: true
-  sni: waphk.mjt000.com
 - name: 日本JP-T-TzPC
   type: trojan
   server: jp.mjt000.com
@@ -108,13 +80,6 @@ proxies:
   udp: true
   sni: jp.mjt000.com
   skip-cert-verify: true
-- name: 香港wap-T-LPYd
-  type: trojan
-  server: waphk.mjt000.com
-  port: 443
-  password: 61339b6c-df0c-423c-93a6-84d7d4e234d1
-  udp: true
-  sni: waphk.mjt000.com
 - name: 日本JP-T-KwGS
   type: trojan
   server: jp.mjt000.com
@@ -123,13 +88,6 @@ proxies:
   udp: true
   sni: jp.mjt000.com
   skip-cert-verify: true
-- name: 香港wap-T-Lwj9
-  type: trojan
-  server: waphk.mjt000.com
-  port: 443
-  password: b6e5e633-a297-4614-88d5-49f94cda618f
-  udp: true
-  sni: waphk.mjt000.com
 - name: 日本JP-T-SiE6
   type: trojan
   server: jp.mjt000.com
@@ -154,13 +112,6 @@ proxies:
   udp: true
   sni: jp.mjt000.com
   skip-cert-verify: true
-- name: 香港wap-T-5tTm
-  type: trojan
-  server: waphk.mjt000.com
-  port: 443
-  password: 258e9750-51ef-4a49-9035-8409cc4649f8
-  udp: true
-  sni: waphk.mjt000.com
 proxy-groups:
 - name: 节点选择
   type: select
@@ -173,23 +124,16 @@ proxy-groups:
   type: url-test
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies:
-  - 日本JP-T-gEwa
-  - 日本JP-T-CjtL
-  - 日本JP-T-pR3s
   - 日本JP-T-ZtHY
   - 日本JP-T-KwGS
-  - 日本JP-T-TzPC
+  - 日本JP-T-pR3s
   - 日本JP-T-SiE6
-  - 日本JP-T-Rvm8
+  - 日本JP-T-CjtL
   - 日本JP-T-oUJn
+  - 日本JP-T-TzPC
+  - 日本JP-T-gEwa
   - 日本JP-T-7fs6
-  - 香港wap-T-R2sl
-  - 香港wap-T-r5jt
-  - 香港wap-T-5tTm
-  - 香港wap-T-Lwj9
-  - 香港wap-T-LPYd
-  - 香港wap-T-FGi6
-  - 香港wap-T-PSM1
+  - 日本JP-T-Rvm8
   url: http://www.pinterest.com
   interval: 300
   tolerance: 50
@@ -197,45 +141,31 @@ proxy-groups:
   type: fallback
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies:
-  - 日本JP-T-gEwa
-  - 日本JP-T-CjtL
-  - 日本JP-T-pR3s
   - 日本JP-T-ZtHY
   - 日本JP-T-KwGS
-  - 日本JP-T-TzPC
+  - 日本JP-T-pR3s
   - 日本JP-T-SiE6
-  - 日本JP-T-Rvm8
+  - 日本JP-T-CjtL
   - 日本JP-T-oUJn
+  - 日本JP-T-TzPC
+  - 日本JP-T-gEwa
   - 日本JP-T-7fs6
-  - 香港wap-T-R2sl
-  - 香港wap-T-r5jt
-  - 香港wap-T-5tTm
-  - 香港wap-T-Lwj9
-  - 香港wap-T-LPYd
-  - 香港wap-T-FGi6
-  - 香港wap-T-PSM1
+  - 日本JP-T-Rvm8
   url: http://www.pinterest.com
   interval: 300
 - name: 手动选择
   type: select
   proxies:
-  - 日本JP-T-gEwa
-  - 日本JP-T-CjtL
-  - 日本JP-T-pR3s
   - 日本JP-T-ZtHY
   - 日本JP-T-KwGS
-  - 日本JP-T-TzPC
+  - 日本JP-T-pR3s
   - 日本JP-T-SiE6
-  - 日本JP-T-Rvm8
+  - 日本JP-T-CjtL
   - 日本JP-T-oUJn
+  - 日本JP-T-TzPC
+  - 日本JP-T-gEwa
   - 日本JP-T-7fs6
-  - 香港wap-T-R2sl
-  - 香港wap-T-r5jt
-  - 香港wap-T-5tTm
-  - 香港wap-T-Lwj9
-  - 香港wap-T-LPYd
-  - 香港wap-T-FGi6
-  - 香港wap-T-PSM1
+  - 日本JP-T-Rvm8
 rules:
 - DOMAIN,app.adjust.com,DIRECT
 - DOMAIN,bdtj.tagtic.cn,DIRECT
