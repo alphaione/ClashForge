@@ -13,14 +13,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@main
         with:
           # 转到 Settings > Secrets and variables > Actions
           # 点击 New repository secret，添加 Secret，名称为 BOT，输入你的token
           token: ${{ secrets.BOT }}
 
       - name: Set up Python
-        uses: actions/setup-python@v2
+        uses: actions/setup-python@main
         with:
           python-version: '3.10.10'
 
